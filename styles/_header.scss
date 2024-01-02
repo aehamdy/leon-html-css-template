@@ -1,0 +1,81 @@
+@import "./variables";
+
+.header {
+  padding: 2rem;
+
+  &__container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  &__logo {
+    width: 6rem;
+  }
+
+  &__links {
+    position: relative;
+
+    &:hover .header__burgerBar:nth-child(2) {
+      width: 100%;
+    }
+
+    &:hover .header__list {
+      display: block;
+    }
+  }
+
+  &__burgerIcon {
+    width: 3rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+    cursor: pointer;
+  }
+
+  &__burgerBar {
+    background-color: $color-black;
+    margin-bottom: 0.5rem;
+    width: 100%;
+    height: 0.2rem;
+  }
+
+  &__burgerBar:nth-child(2) {
+    width: 60%;
+    transition: $transition-timing;
+  }
+
+  &__list {
+    background-color: $bg-grey;
+    position: absolute;
+    right: 0;
+    min-width: 20rem;
+    top: calc(100% + 1.5rem);
+    display: none;
+
+    &::before {
+      content: "";
+      position: absolute;
+      border-width: 1rem;
+      border-style: solid;
+      border-color: transparent transparent $bg-grey transparent;
+      right: 0.5rem;
+      top: -2rem;
+    }
+  }
+
+  &__listItem:not(:last-child) &__link {
+    border-bottom: 1px solid #ddd;
+  }
+
+  &__link {
+    display: block;
+    padding: 1.5rem;
+    color: $color-black;
+    transition: $transition-timing;
+
+    &:hover {
+      padding-inline-start: 2.5rem;
+    }
+  }
+}
