@@ -46,7 +46,7 @@
   }
 
   &__list {
-    background-color: $bg-grey;
+    background-color: $color-grey;
     position: absolute;
     right: 0;
     min-width: 20rem;
@@ -59,7 +59,7 @@
       position: absolute;
       border-width: 1rem;
       border-style: solid;
-      border-color: transparent transparent $bg-grey transparent;
+      border-color: transparent transparent $color-grey transparent;
       right: 0.5rem;
       top: -2rem;
     }
