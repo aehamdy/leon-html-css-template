@@ -52,6 +52,7 @@
     min-width: 20rem;
     top: calc(100% + 1.5rem);
     display: none;
+    z-index: 1;
 
     &::before {
       content: "";

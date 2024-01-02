@@ -96,6 +96,7 @@ a {
   min-width: 20rem;
   top: calc(100% + 1.5rem);
   display: none;
+  z-index: 1;
 }
 .header__list::before {
   content: "";
@@ -117,4 +118,29 @@ a {
 }
 .header__link:hover {
   padding-inline-start: 2.5rem;
+}
+
+.section--landing {
+  background-image: url("../assets/landing.jpg");
+  background-size: cover;
+  height: calc(100vh - 6.4rem);
+  position: relative;
+}
+.section__content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  width: 39rem;
+  max-width: 100%;
+}
+.section__heading {
+  font-size: 5rem;
+  font-weight: bold;
+  color: #10cab7;
+}
+.section__description {
+  font-size: 1.9rem;
+  line-height: 1.8;
 }/*# sourceMappingURL=style.css.map */
