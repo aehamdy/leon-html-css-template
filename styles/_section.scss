@@ -1,4 +1,5 @@
 @import "./variables";
+@import "./mixins";
 
 .section {
   &--landing {
@@ -35,9 +36,7 @@
   }
 
   &__threeCols {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(30rem, 1fr));
-    gap: 2rem;
+    @include d-grid;
   }
 
   &__feat {
@@ -57,6 +56,64 @@
       line-height: 1.8;
       color: #777;
       font-size: 1.7rem;
+    }
+  }
+
+  &__services-content {
+    @include d-grid($gap: 3rem);
+    margin-top: 10rem;
+  }
+
+  &__services-srv {
+    display: flex;
+    margin-bottom: 4rem;
+
+    @media (max-width: 767px) {
+      flex-direction: column;
+      text-align: center;
+    }
+
+    > i {
+      color: $primary-color;
+      flex-basis: 6rem;
+    }
+  }
+
+  &__services-text {
+    flex: 1;
+  }
+
+  &__services-heading {
+    margin-bottom: 2rem;
+  }
+
+  &__services-para {
+    color: $color-light-black;
+    font-weight: 300;
+    line-height: 1.6;
+  }
+
+  &__services-image {
+    position: relative;
+    text-align: center;
+
+    @media (max-width: 1199px) {
+      display: none;
+    }
+
+    &::before {
+      content: "";
+      position: absolute;
+      background-color: $secondary-color;
+      width: 10rem;
+      height: calc(100% + 10rem);
+      top: -5rem;
+      right: 0;
+      z-index: -1;
+    }
+
+    > img {
+      width: 26rem;
     }
   }
 }

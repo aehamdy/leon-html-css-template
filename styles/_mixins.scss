@@ -1,0 +1,5 @@
+@mixin d-grid($gtc: repeat(auto-fill, minmax(30rem, 1fr)), $gap: 2rem) {
+  display: grid;
+  grid-template-columns: $gtc;
+  gap: $gap;
+}
