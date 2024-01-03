@@ -3,3 +3,9 @@
   grid-template-columns: $gtc;
   gap: $gap;
 }
+
+@mixin section($padding-top: 6rem, $padding-bottom: 6rem, $bg: $color-grey) {
+  padding-top: $padding-top;
+  padding-bottom: $padding-bottom;
+  background-color: $bg;
+}

@@ -2,7 +2,7 @@
 @import "./mixins";
 
 .section {
-  &--landing {
+  &-landing {
     background-image: url("../assets/landing.jpg");
     background-size: cover;
     height: calc(100vh - 6.4rem);
@@ -30,9 +30,8 @@
     line-height: 1.8;
   }
 
-  &--features {
-    padding: $default-padding 0;
-    background-color: $color-grey;
+  &-features {
+    @include section;
   }
 
   &__threeCols {
@@ -54,9 +53,13 @@
 
     > p {
       line-height: 1.8;
-      color: #777;
+      color: $color-dark-grey;
       font-size: 1.7rem;
     }
+  }
+
+  &-services {
+    @include section($bg: transparent);
   }
 
   &__services-content {
@@ -115,5 +118,32 @@
     > img {
       width: 26rem;
     }
+  }
+
+  &-portfolio {
+    @include section;
+  }
+
+  &__portfolio-content {
+    @include d-grid($gap: 3rem);
+    margin-top: 8rem;
+  }
+
+  &__portfolio-card {
+    background-color: $color-white;
+  }
+
+  &__portfolio-image {
+    max-width: 100%;
+  }
+
+  &__portfolio-info {
+    padding: 2rem;
+  }
+
+  &__portfolio-para {
+    color: $color-dark-grey;
+    line-height: 1.6;
+    margin-top: 1rem;
   }
 }

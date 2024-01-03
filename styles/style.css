@@ -120,7 +120,7 @@ a {
   padding-inline-start: 2.5rem;
 }
 
-.section--landing {
+.section-landing {
   background-image: url("../assets/landing.jpg");
   background-size: cover;
   height: calc(100vh - 6.4rem);
@@ -144,8 +144,9 @@ a {
   font-size: 1.9rem;
   line-height: 1.8;
 }
-.section--features {
-  padding: 6rem 0;
+.section-features {
+  padding-top: 6rem;
+  padding-bottom: 6rem;
   background-color: #f6f6f6;
 }
 .section__threeCols {
@@ -168,6 +169,11 @@ a {
   line-height: 1.8;
   color: #777;
   font-size: 1.7rem;
+}
+.section-services {
+  padding-top: 6rem;
+  padding-bottom: 6rem;
+  background-color: transparent;
 }
 .section__services-content {
   display: grid;
@@ -221,6 +227,31 @@ a {
 }
 .section__services-image > img {
   width: 26rem;
+}
+.section-portfolio {
+  padding-top: 6rem;
+  padding-bottom: 6rem;
+  background-color: #f6f6f6;
+}
+.section__portfolio-content {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(30rem, 1fr));
+  gap: 3rem;
+  margin-top: 8rem;
+}
+.section__portfolio-card {
+  background-color: #fff;
+}
+.section__portfolio-image {
+  max-width: 100%;
+}
+.section__portfolio-info {
+  padding: 2rem;
+}
+.section__portfolio-para {
+  color: #777;
+  line-height: 1.6;
+  margin-top: 1rem;
 }
 
 .special-heading {
