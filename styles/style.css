@@ -332,6 +332,49 @@ a {
 .section__about-text > p:last-of-type {
   color: #777;
 }
+.section-contact {
+  padding-top: 6rem;
+  padding-bottom: 6rem;
+  background-color: #f6f6f6;
+}
+.section__contact-info {
+  padding-top: 6rem;
+  padding-bottom: 6rem;
+  text-align: center;
+}
+.section__contact-label {
+  font-size: 4rem;
+  font-weight: 800;
+  color: #2c4755;
+  letter-spacing: -0.2rem;
+  margin-bottom: 1.5rem;
+}
+@media (max-width: 767px) {
+  .section__contact-label {
+    font-size: 3.5rem;
+  }
+}
+.section__contact-link {
+  display: block;
+  font-size: 4rem;
+  font-weight: 800;
+  color: #10cab7;
+}
+@media (max-width: 767px) {
+  .section__contact-link {
+    font-size: 3.5rem;
+  }
+}
+.section__contact-social {
+  display: flex;
+  justify-content: center;
+  margin-top: 2rem;
+  font-size: 1.6rem;
+}
+.section__contact-social > i {
+  margin-left: 1rem;
+  color: #2c4755;
+}
 
 .special-heading {
   color: #ebeced;
@@ -357,4 +400,16 @@ a {
   .special-heading + p {
     margin-top: -2.5rem;
   }
+}
+
+.footer {
+  background-color: #2c4755;
+  color: #fff;
+  padding: 3rem 1rem;
+  text-align: center;
+  font-size: 1.8rem;
+}
+.footer > span {
+  font-weight: bold;
+  color: #10cab7;
 }/*# sourceMappingURL=style.css.map */

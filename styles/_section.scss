@@ -230,4 +230,49 @@
       color: $color-dark-grey;
     }
   }
+
+  &-contact {
+    @include section;
+  }
+
+  &__contact-info {
+    padding-top: $default-padding;
+    padding-bottom: $default-padding;
+    text-align: center;
+  }
+
+  &__contact-label {
+    font-size: 4rem;
+    font-weight: 800;
+    color: $secondary-color;
+    letter-spacing: -0.2rem;
+    margin-bottom: 1.5rem;
+
+    @media (max-width: 767px) {
+      font-size: 3.5rem;
+    }
+  }
+
+  &__contact-link {
+    display: block;
+    font-size: 4rem;
+    font-weight: 800;
+    color: $primary-color;
+
+    @media (max-width: 767px) {
+      font-size: 3.5rem;
+    }
+  }
+
+  &__contact-social {
+    display: flex;
+    justify-content: center;
+    margin-top: 2rem;
+    font-size: 1.6rem;
+
+    > i {
+      margin-left: 1rem;
+      color: $secondary-color;
+    }
+  }
 }
